@@ -6,10 +6,9 @@ import 'package:http/http.dart' as http;
 import 'package:dummy_json/model/products/product.dart';
 
 List<Product> productList = [];
-String baseURL = "https://dummyjson.com/products/";
-int limit = 5;
+// int limit = 10;
 
-Future<List<Product>> getProductsData() async {
+Future<List<Product>> getProductsData(int limit) async {
   final response = await http.get(Uri.parse('$url/products?limit=$limit'));
   var data = jsonDecode(response.body.toString());
 
