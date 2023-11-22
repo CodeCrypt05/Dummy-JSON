@@ -1,3 +1,4 @@
+import 'package:dummy_json/dummy_json/gmail.dart';
 import 'package:dummy_json/dummy_json/product.dart';
 import 'package:dummy_json/dummy_json/users.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ProductDart(),
+      home: const GmailDart(),
     );
   }
 }
