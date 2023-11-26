@@ -17,7 +17,7 @@ List categoryPanel = [
   ),
   Category(
     image: "assets/images/DairyProducts.svg",
-    name: 'DairyProducts',
+    name: 'Dairy Products',
     textColor: HexColor('#0077E7'),
     subColor: const Color.fromRGBO(0, 119, 231, 0.05),
   ),
@@ -39,12 +39,12 @@ List categoryPanel = [
     textColor: HexColor('#E70000'),
     subColor: const Color.fromRGBO(231, 0, 0, 0.05),
   ),
-  Category(
-    image: "assets/images/MakeupBeauty.svg",
-    name: 'Makeup & Beauty',
-    textColor: HexColor('#E7009A'),
-    subColor: const Color.fromRGBO(231, 0, 154, 0.05),
-  ),
+  // Category(
+  //   image: "assets/images/MakeupBeauty.svg",
+  //   name: 'Makeup & Beauty',
+  //   textColor: HexColor('#E7009A'),
+  //   subColor: const Color.fromRGBO(231, 0, 154, 0.05),
+  // ),
   Category(
     image: "assets/images/BathingEssential.svg",
     name: 'Bathing Essential',

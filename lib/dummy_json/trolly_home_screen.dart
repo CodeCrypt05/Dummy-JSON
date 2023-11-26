@@ -15,7 +15,7 @@ class HomeTrollyScreen extends StatelessWidget {
             Container(
               height: 300,
               width: double.infinity,
-              color: Colors.amberAccent,
+              // color: Colors.amberAccent,
               child: buildCategoryPanel(),
             ),
           ],
@@ -27,6 +27,7 @@ class HomeTrollyScreen extends StatelessWidget {
   Widget buildCategoryPanel() {
     return ListView.builder(
         scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
         itemCount: categoryPanel.length,
         itemBuilder: (context, index) {
           return CategoryCard(

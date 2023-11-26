@@ -13,6 +13,8 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // color: Colors.blueAccent,
+      margin: const EdgeInsets.symmetric(horizontal: 8),
       child: Column(
         children: [
           SvgPicture.asset(
@@ -20,11 +22,16 @@ class CategoryCard extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           Container(
+            height: 60,
+            width: 120,
+            alignment: Alignment.center,
+            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24),
+                borderRadius: BorderRadius.circular(30),
                 color: category.subColor),
             child: Text(
               category.name,
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: category.textColor,
                 fontSize: 16,
